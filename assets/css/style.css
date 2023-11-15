@@ -14,6 +14,7 @@
 	02. Header
     03. Hero
 	04. Footer
+  05. LXB Hacks
 
 -----------------------------------------------------------------------------------*/
 /*===========================
@@ -1273,3 +1274,10 @@ p.form-message.success, p.form-message.error {
   .back-to-top:hover {
     color: #fff;
     background-color: #DE3660; }
+
+    /**
+     * 05. LXB Hacks
+     */
+    .blog .header_navbar {
+      background-color: rgb(26, 51, 80);
+    }
