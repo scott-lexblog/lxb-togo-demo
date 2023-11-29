@@ -1,0 +1,128 @@
+.LXB_TOGO-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+
+[data-lxb_togo_element="nav"] a {
+
+}
+
+[data-lxb_togo_element="nav"] a:hover {
+    text-decoration: underline;
+}
+
+.LXB_TOGO-nav-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+[data-lxb_togo_element="content"] a {
+    color: black;
+}
+
+[data-lxb_togo_element="content"] a:hover {
+    color: rgb(249 115 22);
+}
+
+
+
+
+
+
+
+
+
+
+
+.LXB_TOGO-post-index-item-header {
+    padding: 55px 0 40px 0;
+    display: flex;
+    align-items: top;
+    gap: 80px;
+    justify-content: space-between;    
+}
+
+.LXB_TOGO-post-index-item-header .LXB_TOGO-image-img {
+    border-radius: 10px;
+    max-width: 200px;
+    order: 2;
+}
+
+.LXB_TOGO-post-index-item-header-title {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.25px;
+    font-weight: 600;    
+}
+
+.LXB_TOGO-post-index-item-header .LXB_TOGO-post-linked_terms-item {
+    color: rgb(249 115 22);
+}
+
+.LXB_TOGO-post-index-item-header .LXB_TOGO-post-linked_terms-item:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.LXB_TOGO-pagination {
+    padding-top: 30px;
+}
+
+.LXB_TOGO-pagination-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LXB_TOGO-pagination-list .LXB_TOGO-pagination-next:only-child {
+    justify-content: end;
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.LXB_TOGO-pagination-next-link,
+.LXB_TOGO-pagination-prev-link,
+.LXB_TOGO-post-index-item-more {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
+    max-width: min-content;
+}
+
+.LXB_TOGO-pagination-list .LXB_TOGO-icon-outer,
+.LXB_TOGO-post-index-item-more .LXB_TOGO-icon-outer {
+    width: 10px;
+    display: block;
+}
