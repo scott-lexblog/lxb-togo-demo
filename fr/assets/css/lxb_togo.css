@@ -42,6 +42,10 @@
  * 3. Content
  */
 
+    .LXB_TOGO-inner-content_and_loader {
+        padding: 60px 0;
+    }
+
     /**
      * 3.1. Elements
      */
@@ -59,7 +63,7 @@
      */
 
         .LXB_TOGO-post-index-item-header {
-            padding: 55px 0 40px 0;
+            padding: 0 0 40px 0;
             display: flex;
             align-items: top;
             gap: 80px;
@@ -147,7 +151,6 @@
      */
         
         .subscribe-page [data-lxb_togo_element="content"] {
-            padding: 60px 0;
         }
 
         .LXB_TOGO-subscribe-title {
@@ -166,5 +169,15 @@
             padding: 5px 25px;
         }
 
+
+        .LXB_TOGO-subscribe-result_and_form,
+        .LXB_TOGO-subscribe_form-input_and_button {
+            display: grid;
+            gap: 15px;
+        }
+
+        .LXB_TOGO-subscribe-result-title {
+            font-weight: 600;
+        }
 
 
