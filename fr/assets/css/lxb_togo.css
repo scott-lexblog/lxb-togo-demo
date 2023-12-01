@@ -5,8 +5,9 @@
  *     3.1. Elements
  *     3.2. Posts
  *     3.3. Pagination
- *     3.4. Icon Links
- *     3.5. Subscribe
+ *     3.4. Single Post    
+ *     3.5. Icon Links
+ *     3.6. Subscribe
  */
 
 /**
@@ -97,7 +98,24 @@
         }   
 
     /**
-     * 3.3. Pagination
+     * 3.3. Single Post
+     */
+        .LXB_TOGO-post {
+            display: flex;
+            gap: 30px;
+        }
+
+        .LXB_TOGO-post .LXB_TOGO-post-header_and_main {
+            width: 66.66%;
+            flex: 1;
+        }
+
+        .LXB_TOGO-post .LXB_TOGO-post-footer {
+            width: 33.33%;
+        }
+
+    /**
+     * 3.4. Pagination
      */
 
         .LXB_TOGO-pagination {
@@ -116,7 +134,7 @@
         }
 
     /**
-     * 3.4. Icon Links
+     * 3.5. Icon Links
      */
         .LXB_TOGO-pagination-next-link,
         .LXB_TOGO-pagination-prev-link,
@@ -151,7 +169,7 @@
 
 
     /**
-     * 3.5. Subscribe
+     * 3.6. Subscribe
      */
         
         .subscribe-page [data-lxb_togo_element="content"] {
