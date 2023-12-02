@@ -112,6 +112,18 @@
 
         .LXB_TOGO-post .LXB_TOGO-post-footer {
             width: 33.33%;
+            display: grid;
+            gap: ;
+        }
+
+        .LXB_TOGO-share-list {
+            display: flex;
+            gap: 24px;
+        }
+
+        .LXB_TOGO-share-item-link {
+            width: 24px;
+            display: block;
         }
 
     /**
