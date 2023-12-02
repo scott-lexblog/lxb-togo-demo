@@ -136,6 +136,13 @@
     /**
      * 3.5. Icon Links
      */
+        
+        svg.LXB_TOGO-icon {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
         .LXB_TOGO-pagination-next-link,
         .LXB_TOGO-pagination-prev-link,
         .LXB_TOGO-post-index-item-more {
