@@ -5,9 +5,11 @@
  *     3.1. Elements
  *     3.2. Index Posts
  *     3.3. Single Post
- *     3.4. Pagination 
- *     3.5. Icon Links
- *     3.6. Subscribe
+ *         3.3.1. Post Footer
+ *     3.4. Author Page
+ *     3.5. Pagination 
+ *     3.6. Icon Links
+ *     3.7. Subscribe
  */
 
 /**
@@ -48,7 +50,6 @@
  */
 
     .LXB_TOGO-inner-content_and_loader {
-        padding: 60px 0;
     }
 
     /**
@@ -66,6 +67,10 @@
     /**
      * 3.2. Index Posts
      */
+
+        .LXB_TOGO-inner-index {
+            padding: 60px 0;
+        }
 
         .LXB_TOGO-posts-index-inner {
             display: grid;
@@ -151,21 +156,65 @@
     /**
      * 3.3. Single Post
      */
-        .LXB_TOGO-post {
-            display: flex;
-            align-items: flex-start;
-            gap: 30px;
+    
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header_and_main {
+            padding: 60px 0 0 0 ;
+            border-top: 1px solid #dddddd; 
         }
 
-        .LXB_TOGO-post .LXB_TOGO-post-header_and_main {
-            width: 66.66%;
+        .LXB_TOGO-inner-single .LXB_TOGO-post {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header_and_main {
+            width: 75%;
+
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header {
+            display: flex;
+            gap: 80px;
+            align-items: start;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header a {
+            color: rgb( 249 115 22 );
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header a:hover {
+            color: #000;
+            text-decoration: underline;
+        }        
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-header-text {
+            width: 60%;
             flex: 1;
         }
 
-        .LXB_TOGO-post .LXB_TOGO-post-footer {
-            width: 33.33%;
+        .LXB_TOGO-post-header-title {
+            font-size: 40px;
+            line-height: 43px;
+            letter-spacing: 0.5px;
+            font-weight: 900;   
+            margin-bottom: 10px;            
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-image-img {
+            border-radius: 10px;
+            order: 2;
+            display: block;
+            width: 40%;
+        }
+
+        .LXB_TOGO-inner-single .LXB_TOGO-post-footer {
+            width: 25%;
             display: grid;
-            gap: ;
+            padding-left: 96px;
         }
 
         .LXB_TOGO-share-list {
@@ -178,8 +227,94 @@
             display: block;
         }
 
+        .LXB_TOGO-inner-single .LXB_TOGO-post-main {
+            display: grid;
+            gap: 20px;
+            
+            font-size: 18px;
+            line-height: 28px;
+
+        }
+
+        /**
+         * 3.3.1. Post Footer
+         */
+        
+            .LXB_TOGO-inner-single .LXB_TOGO-post-footer {
+                display: grid;
+                gap: 30px;
+            } 
+            
+            .LXB_TOGO-inner-single .LXB_TOGO-post-footer a {
+                color: rgb( 249 115 22 );
+            }
+
+            .LXB_TOGO-inner-single .LXB_TOGO-post-footer a:hover {
+                color: #000;
+                text-decoration: underline;
+            }   
+
+            .LXB_TOGO-post-authors {
+                display: grid;
+                gap: 18px;                
+            }
+
+            .LXB_TOGO-inner-single .LXB_TOGO-post-footer .LXB_TOGO-user-index {
+                display: flex;
+                gap: 18px;
+            }
+
+            .LXB_TOGO-post-footer .LXB_TOGO-user-image {
+                max-width: 90px;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .LXB_TOGO-post-footer a.LXB_TOGO-user-index-name-link {
+                font-weight: 600;
+                color: #000;
+            }
+
+            .LXB_TOGO-post-footer a.LXB_TOGO-user-index-name-link:hover {
+                color: rgb( 249 115 22 );
+                text-decoration: underline;
+            }
+
+            .LXB_TOGO-post-footer .LXB_TOGO-post-related {
+                display: grid;
+                gap: 15px;    
+            }
+
+            .LXB_TOGO-post-footer .LXB_TOGO-post-related-list {
+                display: grid;
+                gap: 10px;   
+            }
+
     /**
-     * 3.4. Pagination
+     * 3.4. Author Page
+     */
+        
+        .author-page .LXB_TOGO-nav-list {
+            display: grid;
+            font-weight: 600;
+            gap: 0;
+        }
+
+        .author-page .LXB_TOGO-nav-list-item {
+            padding: 15px 25px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .author-page .LXB_TOGO-nav-list-item:first-child {
+            border-top: 1px solid #ccc;
+        }
+
+        .author-page .LXB_TOGO-archive-author-title {
+            display: none;
+        }
+
+    /**
+     * 3.5. Pagination
      */
 
         .LXB_TOGO-pagination {
@@ -211,7 +346,7 @@
         }   
 
     /**
-     * 3.5. Icon Links
+     * 3.6. Icon Links
      */
         
         svg.LXB_TOGO-icon {
@@ -253,7 +388,7 @@
 
 
     /**
-     * 3.6. Subscribe
+     * 3.7. Subscribe
      */
         
         .subscribe-page [data-lxb_togo_element="content"] {
