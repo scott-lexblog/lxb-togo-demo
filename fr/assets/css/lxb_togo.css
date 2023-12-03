@@ -7,9 +7,10 @@
  *     3.3. Single Post
  *         3.3.1. Post Footer
  *     3.4. Author Page
- *     3.5. Pagination 
- *     3.6. Icon Links
- *     3.7. Subscribe
+ *     3.5. Term Page
+ *     3.6. Pagination 
+ *     3.7. Icon Links
+ *     3.8. Subscribe
  */
 
 /**
@@ -100,7 +101,7 @@
 
         .LXB_TOGO-post-index-item-header-title {
             font-size: 30px;
-            line-height: 42px;
+            line-height: 36px;
             letter-spacing: 0.25px;
             font-weight: 600; 
             margin-bottom: 10px;   
@@ -314,7 +315,15 @@
         }
 
     /**
-     * 3.5. Pagination
+     * 3.5. Term Page
+     */
+    
+        .term-page .LXB_TOGO-term-index-title {
+            display: none;
+        }
+
+    /**
+     * 3.6. Pagination
      */
 
         .LXB_TOGO-pagination {
@@ -346,7 +355,7 @@
         }   
 
     /**
-     * 3.6. Icon Links
+     * 3.7. Icon Links
      */
         
         svg.LXB_TOGO-icon {
@@ -388,7 +397,7 @@
 
 
     /**
-     * 3.7. Subscribe
+     * 3.8. Subscribe
      */
         
         .subscribe-page [data-lxb_togo_element="content"] {
