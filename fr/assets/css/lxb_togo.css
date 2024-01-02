@@ -11,7 +11,9 @@
  *     3.6. Pagination 
  *     3.7. Icon Links
  *     3.8. Subscribe
- *     3.9. Search     
+ *     3.9. Search 
+ *     3.10. Taxonomy 
+ *     3.11. Authors    
  */
 
 /**
@@ -413,6 +415,10 @@
         .subscribe-page [data-lxb_togo_element="content"] {
         }
 
+        .LXB_TOGO-inner-subscribe {
+            padding: 60px 0;
+        }
+
         .LXB_TOGO-subscribe-title {
             font-size: 30px;
             font-weight: 600;
@@ -484,6 +490,11 @@
             outline: 2px solid rgb(249 115 22);
         }        
 
+        .LXB_TOGO-search-button-outer {
+            display: flex;
+            align-items: center;
+        }
+
         .LXB_TOGO-search-button-text {
             display: none;
         }
@@ -493,9 +504,42 @@
             display: block;
         }
 
+        .LXB_TOGO-search-results-keyword {
+            font-weight: 600;
+        }
+
         .LXB_TOGO-search-results {
             display: grid;
             gap: 30px;           
         }
+
+    /**
+     * 3.10. Taxonomy
+     */
+        .LXB_TOGO-inner-taxonomy {
+            padding: 60px 0;
+        }
+
+        .LXB_TOGO-terms {
+            display: grid;
+            gap: 30px;
+        }
+
+        .LXB_TOGO-terms-title {
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: 0.25px;
+            font-weight: 600;  
+        }
+
+        .LXB_TOGO-terms-list {
+            display: grid;
+            gap: 10px;           
+        }
+
+
+    /**
+     * 3.11. Authors
+     */
 
 
