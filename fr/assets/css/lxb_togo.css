@@ -206,26 +206,48 @@
         .LXB_TOGO-inner-single .LXB_TOGO-post-header_and_main {
             padding: 60px 0 0 0 ;
             border-top: 1px solid #dddddd; 
+            margin-bottom: 60px;
         }
 
         .LXB_TOGO-inner-single .LXB_TOGO-post {
             display: flex;
             align-items: flex-start;
+            flex-direction: column;
         }
 
-        .LXB_TOGO-inner-single .LXB_TOGO-post-header_and_main {
-            width: 75%;
+        @media( min-width: 1000px ) {        
+
+            .LXB_TOGO-inner-single .LXB_TOGO-post {
+                flex-direction: row;
+            }
+
+        }
+
+        @media( min-width: 1000px ) {
+
+            .LXB_TOGO-inner-single .LXB_TOGO-post-header_and_main {
+                width: 75%;
+                margin-bottom: 0;
+            }
 
         }
 
         .LXB_TOGO-inner-single .LXB_TOGO-post-header {
             display: flex;
-            gap: 80px;
+            gap: 30px;
             align-items: start;
             justify-content: space-between;
             padding-bottom: 30px;
             margin-bottom: 30px;
             border-bottom: 1px solid #eee;
+            flex-direction: column;
+        }
+
+        @media( min-width: 600px ) {
+            .LXB_TOGO-inner-single .LXB_TOGO-post-header {
+                flex-direction: row;
+                gap: 80px;
+            }
         }
 
         .LXB_TOGO-inner-single .LXB_TOGO-post-header a {
@@ -238,9 +260,14 @@
         }        
 
         .LXB_TOGO-inner-single .LXB_TOGO-post-header-text {
-            width: 60%;
             flex: 1;
         }
+
+         @media( min-width: 600px ) {
+            .LXB_TOGO-inner-single .LXB_TOGO-post-header-text {
+                width: 60%;
+            }
+         }
 
         .LXB_TOGO-post-header-title {
             font-size: 40px;
@@ -252,15 +279,25 @@
 
         .LXB_TOGO-inner-single .LXB_TOGO-image-img {
             border-radius: 10px;
-            order: 2;
             display: block;
-            width: 40%;
+        }
+
+        @media( min-width: 600px ) {
+            .LXB_TOGO-inner-single .LXB_TOGO-image-img {
+                order: 2;
+                width: 40%;
+            }            
         }
 
         .LXB_TOGO-inner-single .LXB_TOGO-post-footer {
-            width: 25%;
             display: grid;
-            padding-left: 96px;
+        }
+
+        @media( min-width: 600px ) {
+            .LXB_TOGO-inner-single .LXB_TOGO-post-footer {
+                width: 25%;
+                padding-left: 96px;    
+            }
         }
 
         .LXB_TOGO-share-list {
@@ -308,6 +345,13 @@
             .LXB_TOGO-inner-single .LXB_TOGO-post-footer .LXB_TOGO-user-index {
                 display: flex;
                 gap: 18px;
+                flex-direction: column;
+            }
+
+            @media( min-width: 1300px ) {
+                .LXB_TOGO-inner-single .LXB_TOGO-post-footer .LXB_TOGO-user-index {
+                    flex-direction: row;
+                }               
             }
 
             .LXB_TOGO-post-footer .LXB_TOGO-user-image {
@@ -612,7 +656,13 @@
      */
     
         .LXB_TOGO-inner-term {
-            padding: 60px 0 0 0;
+            padding: 30px 0 ;
+        }        
+
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-inner-term {
+                padding: 60px 0 ;
+            }
         }
 
         .LXB_TOGO-term-index {
