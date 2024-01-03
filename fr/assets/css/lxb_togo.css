@@ -637,7 +637,12 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
             }
-        }        
+        }    
+
+        .LXB_TOGO-author-collection-item {
+            display: flex;
+            gap: 10px;
+        }    
     
     /**
      * 3.12. 404
