@@ -623,6 +623,7 @@
 
         .LXB_TOGO-terms-list-author {
             display: grid;
+            gap: 20px;
         }
 
         @media( min-width: 600px ) {    
@@ -642,7 +643,29 @@
         .LXB_TOGO-author-collection-item {
             display: flex;
             gap: 10px;
-        }    
+        }   
+
+        .LXB_TOGO-author-collection-item .LXB_TOGO-user-image {
+            max-width: 90px;
+        }
+
+        .LXB_TOGO-user-image-img {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        a.LXB_TOGO-author-collection-item-name-link {
+            color: rgb(249 115 22);
+        }
+
+        .LXB_TOGO-author-collection-item-name-link:hover {
+            text-decoration: underline;
+        }
+
+        .LXB_TOGO-author-collection-item-job {
+            font-size: 80%;
+            text-transform: uppercase;
+        }
     
     /**
      * 3.12. 404
