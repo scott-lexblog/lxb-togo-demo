@@ -13,7 +13,8 @@
  *     3.8. Subscribe
  *     3.9. Search 
  *     3.10. Taxonomy 
- *     3.11. Authors    
+ *     3.11. Authors   
+ *     3.12. 404 
  */
 
 /**
@@ -541,5 +542,29 @@
     /**
      * 3.11. Authors
      */
+    
+    /**
+     * 3.12. 404
+     */
+        
+        .LXB_TOGO-404 {
+            display: grid;
+            gap: 30px;
+        }
+
+        .LXB_TOGO-404-title {
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: 0.25px;
+            font-weight: 600;          
+        }
+
+        a.LXB_TOGO-404-search_link {
+            color: rgb(249 115 22);
+        }
+
+        a.LXB_TOGO-404-search_link:hover {
+            text-decoration: underline;
+        }
 
 
