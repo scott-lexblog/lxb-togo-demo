@@ -46,8 +46,17 @@
 
     .LXB_TOGO-nav-list {
         display: flex;
-        gap: 30px;
-        align-items: center;
+        gap: 10px;
+        flex-direction: column;         
+    }
+
+    @media( min-width: 600px ) {
+        .LXB_TOGO-nav-list {
+            gap: 30px;
+            flex-direction: row; 
+            align-items: center;
+        
+        }
     }
 
 /**
@@ -90,8 +99,18 @@
         .LXB_TOGO-post-index-item {
             display: flex;
             align-items: start;
-            gap: 80px;
-            justify-content: space-between;   
+            gap: 20px;
+            justify-content: space-between; 
+            flex-direction: column;  
+        }
+
+        @media( min-width: 1000px ) {
+
+            .LXB_TOGO-post-index-item {
+                gap: 80px;
+                flex-direction: row;  
+            }
+           
         }
 
         .LXB_TOGO-post-index-item-header {
@@ -99,13 +118,22 @@
         }
 
         .LXB_TOGO-post-index-item-header_and_main {
-            width: 80%;
-            flex: 1;
+            order: 2;
         }
 
-        .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child .LXB_TOGO-post-index-item-header_and_main {
-            width: 60%;
-            flex: 1;          
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-post-index-item-header_and_main {
+                width: 80%;
+                flex: 1;
+                order: 1;
+            }
+        }
+
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child .LXB_TOGO-post-index-item-header_and_main {
+                width: 60%;
+                flex: 1;          
+            }
         }
 
         .LXB_TOGO-post-index-item-header-title {
@@ -128,14 +156,18 @@
             height: auto;
         }        
 
-        .LXB_TOGO-post-index-item > .LXB_TOGO-image-img {
-            width: 20%;
-            order: 2;
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-post-index-item > .LXB_TOGO-image-img {
+                width: 20%;
+                order: 2;
+            }
         }
 
-        .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child > .LXB_TOGO-image,
-        .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child > .LXB_TOGO-image-img {
-            width: 40%;
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child > .LXB_TOGO-image,
+            .LXB_TOGO-posts-index-inner .LXB_TOGO-post-index-item:first-child > .LXB_TOGO-image-img {
+                width: 40%;
+            }
         }
 
         .LXB_TOGO-post-index-item-header .LXB_TOGO-post-linked_terms-item {
@@ -547,6 +579,14 @@
      * 3.12. 404
      */
         
+        .LXB_TOGO-inner-404 {
+            padding: 60px 0;
+        }
+
+        .article-page .LXB_TOGO-inner-404 {
+            border-top: 1px solid #ddd;
+        }
+
         .LXB_TOGO-404 {
             display: grid;
             gap: 30px;

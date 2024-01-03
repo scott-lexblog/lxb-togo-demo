@@ -41,7 +41,7 @@
                     <img class='block w-full h-auto' src='./assets/img/logo.svg'>
                 </div>
 
-                <div class='flex items-center gap-14'>
+                <div class='hidden lg:flex items-center gap-14'>
 
                     <nav class='flex items-center text-xs uppercase font-bold gap-14'>
                         <a class='pt-2 pb-1 border-b-2 border-transparent hover:text-orange-500' href=''>Services</a>
@@ -61,6 +61,8 @@
 
                 </div>
 
+                <div class='lg:hidden'><button class='hover:text-orange-500'>Menu</button></div>
+
             </div>
 
         </header>
@@ -68,7 +70,7 @@
         <main class=''>
             <div class='px-5 py-14 bg-sky-600 text-white'>
                 
-                <div class='mx-auto max-w-7xl flex items-center justify-between'>
+                <div class='mx-auto max-w-7xl lg:flex items-center justify-between space-y-10 lg:space-y-0'>
 
                     <div class='space-y-1'>
                         <div>Publications</div>
@@ -119,19 +121,21 @@
             </div>    
 
         </main>
-
+        
         <footer class='px-5 '>
-            <div class='py-20 mx-auto max-w-7xl flex items-center justify-between'>
+            <div class='py-20 mx-auto max-w-7xl space-y-10 sm: space-y-0 sm:flex items-start xl:items-center justify-between'>
                 
-                <nav class='uppercase text-xs flex gap-8 font-bold'>
-                    <a class='hover:text-orange-500' href=''>Subscribe</a>
-                    <a class='hover:text-orange-500' href=''>Contact Us</a>
-                    <a class='hover:text-orange-500' href=''>Terms of Use</a>
-                    <a class='hover:text-orange-500' href=''>Privacy Notice</a>
-                    <a class='hover:text-orange-500' href=''>Accessibility</a>
-                    <a class='hover:text-orange-500' href=''>Transparency in Coverage</a>
-                    <a class='hover:text-orange-500' href=''>Payment Portal</a>
-                    <a class='hover:text-orange-500' href=''>Cookie Preferences</a>
+                <nav class='uppercase text-xs font-bold'>
+                    <ul class='xl:flex gap-8'>
+                        <li><a class='hover:text-orange-500' href=''>Subscribe</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Contact Us</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Terms of Use</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Privacy Notice</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Accessibility</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Transparency in Coverage</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Payment Portal</a></li>
+                        <li><a class='hover:text-orange-500' href=''>Cookie Preferences</a></li>    
+                    </ul>
                 </nav>
 
                 <div class='flex items-center gap-3'>
