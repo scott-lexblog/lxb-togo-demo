@@ -657,7 +657,7 @@
             color: rgb(249 115 22);
         }
 
-        .LXB_TOGO-author-collection-item a.LXB_TOGO-user-index-name-link {
+        .LXB_TOGO-author-collection-item a.LXB_TOGO-user-index-name-link:hover {
             text-decoration: underline;
         }
 
