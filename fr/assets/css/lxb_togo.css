@@ -567,4 +567,21 @@
             text-decoration: underline;
         }
 
+    /**
+     * 3.13. Term Archive
+     */
+    
+        .LXB_TOGO-inner-term {
+            padding: 60px 0 0 0;
+        }
+
+        .LXB_TOGO-term-index {
+            display: grid;
+            gap: 30px;            
+        }
+
+        .LXB_TOGO-term-index-title-term {
+            font-weight: 600;
+        }
+
 
