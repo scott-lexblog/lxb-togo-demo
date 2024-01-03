@@ -15,6 +15,8 @@
  *     3.10. Taxonomy 
  *     3.11. Authors   
  *     3.12. 404 
+ *     3.13. Term Archive
+ *     3.14. Author Archive
  */
 
 /**
@@ -618,6 +620,24 @@
     /**
      * 3.11. Authors
      */
+
+        .LXB_TOGO-terms-list-author {
+            display: grid;
+        }
+
+        @media( min-width: 600px ) {    
+            .LXB_TOGO-terms-list-author {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media( min-width: 800px ) {  
+            .LXB_TOGO-terms-list-author {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+            }
+        }        
     
     /**
      * 3.12. 404
@@ -675,3 +695,25 @@
         }
 
 
+    /**
+     * 3.14. Author Archive
+     */
+    
+        .LXB_TOGO-inner-author {
+            padding: 30px 0 ;
+        }        
+
+        @media( min-width: 1000px ) {
+            .LXB_TOGO-inner-author {
+                padding: 60px 0 ;
+            }
+        }
+
+        .LXB_TOGO-archive-author {
+            display: grid;
+            gap: 30px;            
+        }
+
+        .LXB_TOGO-archive-author-title-author {
+            font-weight: 600;
+        }
