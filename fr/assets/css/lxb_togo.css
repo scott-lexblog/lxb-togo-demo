@@ -640,7 +640,7 @@
             }
         }    
 
-        .LXB_TOGO-author-collection-item {
+        .LXB_TOGO-author-collection-item .LXB_TOGO-user-index {
             display: flex;
             gap: 10px;
         }   
@@ -649,20 +649,19 @@
             max-width: 90px;
         }
 
-        .LXB_TOGO-user-image-img {
-            border-radius: 5px;
-            overflow: hidden;
+        .LXB_TOGO-author-collection-item .LXB_TOGO-user-image-img {
+            border-radius: 8px;
         }
 
-        a.LXB_TOGO-author-collection-item-name-link {
+        .LXB_TOGO-author-collection-item a.LXB_TOGO-user-index-name-link {
             color: rgb(249 115 22);
         }
 
-        .LXB_TOGO-author-collection-item-name-link:hover {
+        .LXB_TOGO-author-collection-item a.LXB_TOGO-user-index-name-link {
             text-decoration: underline;
         }
 
-        .LXB_TOGO-author-collection-item-job {
+        .LXB_TOGO-author-collection-item .LXB_TOGO-user-index-job_title {
             font-size: 80%;
             text-transform: uppercase;
         }
